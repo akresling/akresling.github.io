@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="post_heading">
+    <h4>Archive of my posts</h4>
+</div>
+
+<div class="row">
+    {% for post in site.posts %}
+    <div class="col s4">
+        <div class="card">
+            <div class="card-content ">
+                <h5 class="post_heading">{{post.title}}</h5>
+                <p>
+                    {{ post.content | strip_html | truncatewords: 30}}
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="{{ site.baseurl }}{{post.url}}">Read More</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

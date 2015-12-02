@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% assign post = site.posts.first %}
+<div>
+    <h1 class="post_heading"> {{ post.title }} </h1>
+
+    <div class="date">
+        {{ post.date | date: "%B %e, %Y" }}
+    </div>
+
+    <div class="post">
+        {{ post.content }}
+    </div>
+</div>
