@@ -49,6 +49,7 @@ html, body, p{
     max-width: 100%;
     overflow-x: hidden;
     color: #2E2E2E;
+    background-color: #F0F0F0;
 }
 
 .sidebar {
