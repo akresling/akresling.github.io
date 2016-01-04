@@ -101,6 +101,10 @@ html, body, p{
     padding-bottom: 15px;
 }
 
+.post > h4 {
+    color: #2C858D;
+}
+
 .post {
     text-align: justify;
     margin-right: 25px;
@@ -149,4 +153,20 @@ html, body, p{
 
 .verticalLine {
     border-left: thick solid #ff0000;
+}
+
+p > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img + em {
+    display: block;
+    text-align: center;    
+}
+
+.image_row {
+    text-align: center;
+    padding-bottom: 15px;
 }
