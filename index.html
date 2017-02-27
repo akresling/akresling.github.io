@@ -1,16 +1,45 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-{% assign post = site.posts.first %}
-<div>
-    <h1 class="post_heading"> {{ post.title }} </h1>
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
 
-    <div class="date">
-        {{ post.date | date: "%B %e, %Y" }}
-    </div>
+    <!-- Favicon -->
+    <link rel="icon" href="{{site.baseurl}}/images/ak_favicon.ico" />
 
-    <div class="post">
-        {{ post.content }}
-    </div>
-</div>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artem Kresling</title>
+</head>
+
+<body>
+   <div class="container">
+       <img src="{{site.baseurl}}/images/ak_hollow.png" class="circle" height="350px" width="350px"/>
+        <div class="description">
+            I'm Artem. I'm a developer from Toronto. I like to build things. I like to learn stuff. I write mostly in Go.
+            If you're interested in the work I've done, take a look at the links below.
+            <br> <br>
+            Contact me directly at: akresling@gmail.com
+            <br> <br>
+            <a href="{{ site.baseurl }}/res/artemkresling_resume.pdf" download>Download my Resume</a>
+            <br><br>
+            <hr width="80%" color="#74CEB7">
+        </div>
+        <div class="icons">
+            <ul>
+                <li><a href="https://medium.com/@akresling"><i class="fa fa-medium fa-3x"></i></a></li>
+                <li><a href="https://github.com/akresling"><i class="fa fa-git-square fa-3x"></i></a></li>
+                <li><a href="https://ca.linkedin.com/in/artem-kresling-662773a2"><i class="fa fa-linkedin-square fa-3x"></i></a></li>
+                <li><a href="mailto:akresling@gmail.com"><i class="fa fa-envelope fa-3x"></i></a></li>
+            </ul>
+        </div>
+   </div>
+
+</body>
+
+</html>
